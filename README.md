@@ -1,8 +1,8 @@
 <div align="center">
 
-# ImGui Java
+# Forked ImGui Java
 
-**JNI based binding for [Dear ImGui](https://github.com/ocornut/imgui)**
+**Fork of the JNI based binding for [Dear ImGui](https://github.com/ocornut/imgui)**
 
 [![Github All Releases](https://img.shields.io/github/downloads/SpaiR/imgui-java/total.svg?logo=github)](https://github.com/SpaiR/imgui-java/releases)
 [![CI](https://github.com/SpaiR/imgui-java/actions/workflows/ci.yml/badge.svg)](https://github.com/SpaiR/imgui-java/actions/workflows/ci.yml)<br>
@@ -13,6 +13,8 @@
 </div>
 
 ---
+
+This fork was created to update the project to the latest release of ImGui and to add support for other extensions. This Fork was made for private purpouses, please refer to https://github.com/SpaiR/imgui-java for the original.
 
 ### Features
 
