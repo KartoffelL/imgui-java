@@ -26,9 +26,9 @@ test {
 
 compileJava {
     // By default we do not generate API, since we believe this should be done on purpose.
-    // if (System.getProperty('build.debug.generate.api.enable')) { //For this fork, we want to recreate the api every time
+    if (System.getProperty('build.debug.generate.api.enable')) {
         dependsOn 'generateApi'
-    // }
+    }
 }
 
 sourceSets {
