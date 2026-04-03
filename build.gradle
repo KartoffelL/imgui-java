@@ -47,7 +47,7 @@ tasks.register('buildAll') { t ->
     t.dependsOn ':imgui-app:shadowJar'
 
     ['app', 'binding', 'lwjgl3'].each { module ->
-        ['build', 'sourcesJar', 'javadocJar'].each { task ->
+        ['build', 'sourcesJar'/*, 'javadocJar'*/].each { task -> //Do not create javadoc!
             t.dependsOn ":imgui-$module:$task"
         }
     }
