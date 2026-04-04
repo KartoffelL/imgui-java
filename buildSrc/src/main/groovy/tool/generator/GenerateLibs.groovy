@@ -93,7 +93,7 @@ class GenerateLibs extends DefaultTask {
             // By defining IMGUI_ENABLE_FREETYPE, Dear ImGui will default to using the FreeType font renderer.
             // However, we modify the source code to ensure that, even with this, the STB_TrueType renderer is used instead.
             // To use the FreeType font renderer, it must be explicitly forced on the atlas manually.
-            replaceSourceFileContent("imgui_draw.cpp", "ImGuiFreeType::GetBuilderForFreeType()", "ImFontAtlasGetBuilderForStbTruetype()")
+//            replaceSourceFileContent("imgui_draw.cpp", "ImGuiFreeType::GetBuilderForFreeType()", "ImFontAtlasGetBuilderForStbTruetype()") //Edit, commented out since it was producing errors and FreeType should always be used
         }
 
         // Copy dirent for ImGuiFileDialog
